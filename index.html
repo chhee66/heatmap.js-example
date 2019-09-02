@@ -1,0 +1,27 @@
+<!--단축키 : html + tab-->
+<!--heatmap.js-->
+<!-- https://www.patrick-wied.at/static/heatmapjs/example-minimal-config.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>HeatMap Example (20190826)</title>
+    <!--<script type="text/javascript" src="heatmap.min.js"></script>-->
+  </head>
+  <body>
+    <div>
+      <container style="background-color:black; position: relative; height: 400px; width: 400px;" class="heatmap">
+      </container> <!-- container는 background-color 속성이 적용 안 된다. -->
+    </div>
+    <!-- 이렇게 써도 된다. -->
+    <!--
+    <div style="background-color:black; position: relative; height: 400px; width: 400px;" class="heatmap">
+    </div>
+    -->
+    <!-- <canvas>와 <svg>는 heatmap이 나타나지 않는다. 이유는 모르겠다. -->
+
+    <script src="heatmap.js"></script> <!-- JS 선언 순서 중요! -->
+    <script src="heatmap_ex.js"></script>
+  </body>
+</html>
